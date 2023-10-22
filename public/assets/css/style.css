@@ -3,7 +3,10 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
-
+/* modify the bg color of bootstrap's elements to transparent */
+.bg-custom{
+    background-color: rgba(0, 0, 0, 0);
+}
 
 
 
@@ -12,10 +15,24 @@
 /* header */
 
 header{
-    background-color: lightcoral;
+    background-image: url("../img/landscapes/landscape1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
 }
-
+.navbar{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.navbar a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.navbar-toggler{
+    border: 2px solid white !important;
+}
 
 
 /* ! body */
