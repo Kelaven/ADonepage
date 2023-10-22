@@ -5,15 +5,42 @@
 }
 /* modify the bg color of bootstrap's elements to transparent */
 .bg-custom{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+h1{
+    color: white !important;
+    text-transform: uppercase;
+}
+h2{
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 16px !important;
+}
+hr{
+    width: 130px;
+    border: 1px solid !important;
+    border-radius: 5px;
+    opacity: 0.9 !important;
+}
+p{
+    color: white;
+}
+/* all buttons without burger menu */
+.btn__without-burger-menu{
+    color: white !important;
+    text-transform: uppercase !important;
+    background-color: #3D848D !important;
+    border: none !important;
+    padding: 7px 20px !important;
+    font-weight: bolder;
+}
+i{
+    color: white;
 }
 
 
-
-
 /* ! header */
-/* header */
-
+/* background image */
 header{
     background-image: url("../img/landscapes/landscape1.jpg");
     background-repeat: no-repeat;
@@ -21,6 +48,7 @@ header{
     background-size: cover;
     height: 100vh;
 }
+/* navbar */
 .navbar{
     background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -32,6 +60,19 @@ header{
 }
 .navbar-toggler{
     border: 2px solid white !important;
+}
+/* custom bg to display when clicking on the burger menu */
+.navbar-collapse--active{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+/* to align items in the middle */
+#container-size__header-elements{
+    height: 80%;
+}
+/* hr */
+#hr__header{
+    color: #3D848D !important;
 }
 
 
