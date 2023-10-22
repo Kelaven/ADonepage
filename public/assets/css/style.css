@@ -1,0 +1,49 @@
+/* ! Paramètres généraux */
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+/* ! header */
+/* header */
+
+header{
+    background-color: lightcoral;
+    height: 100vh;
+}
+
+
+
+/* ! body */
+/* biography */
+
+#biography{
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+/* portraits */
+
+#portraits{
+    background-color: lightcyan;
+}
+
+/* landscape */
+
+#landscape{
+    background-color: lightsalmon;
+
+}
+
+/* form */
+#form{
+    background-color: lightblue;
+    height: 100vh;
+}
+#form__elements{
+    background-color: white;
+}
