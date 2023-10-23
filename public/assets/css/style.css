@@ -81,17 +81,17 @@ header{
 /* ! body */
 /* biography */
 
-#biography{
-    min-height: 100vh;
-}
 #biography-picture{
-    height: 600px;
+    height: 500px;
     border-radius: 20px;
     max-width: 100%;
     object-fit: cover;
 }
 #biography h1, hr{
     color: #F6A844 !important;
+}
+#hr__biography{
+    width: 100px;
 }
 #biography button{
     color: white;
@@ -103,7 +103,94 @@ header{
 
 /* portraits */
 #portraits{
-    background-color: lightcyan;
+    background-color: #3D848D;
+}
+#hr__portraits{
+    width: 80px;
+    color: white !important;
+}
+.displaygrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+#img1{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+#img2{
+    grid-column-start: 3;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+#img3{
+    grid-column-start: 7;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+#img4{
+    grid-column-start: 3;
+    grid-column-end: span 6;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+#img5{
+    grid-column-start: 9;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+#img6{
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+#img7{
+    grid-column-start: 4;
+    grid-column-end: span 5;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+#img8{
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+#img9{
+    grid-column-start: 6;
+    grid-column-end: span 5;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+.portraits-img-size{
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 8px;
+}
+/* media querie to make the grid responsive */
+@media (max-width: 992px) {
+    .displaygrid{
+        /* to stack photos one below others (without specific positions) */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; /* to reset automatic lines */
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9 {
+        /* input auto values to reset columns and rows position : that's why in mobile these images haven't specific position. */
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    /* so, images are reorganize in mobile display with auto values to reset them columns and rows positions */
+    }
 }
 
 /* landscape */
