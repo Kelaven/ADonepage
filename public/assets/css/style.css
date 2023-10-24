@@ -79,7 +79,7 @@ header{
 
 
 /* ! body */
-/* biography */
+/** biography **/
 
 #biography-picture{
     height: 500px;
@@ -101,7 +101,7 @@ header{
     color: black;
 }
 
-/* portraits */
+/** portraits **/
 #portraits{
     background-color: #3D848D;
 }
@@ -193,18 +193,98 @@ header{
     }
 }
 
-/* landscape */
+/** landscape **/
 
 #landscape{
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
 
 }
 
-/* form */
+/** form **/
+/* form on mobile */
 #form{
-    background-color: lightblue;
+    background-color: #3D848D;
     height: 100vh;
 }
 #form__elements{
     background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 740px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#bg-form-img{
+    background-image: url(../img/photographer2.jpg);
+    height: calc(740px / 2);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#bg-form-img__filigram{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#form-elements{
+    height: 100%;
+    width: 100%;
+}
+#hr__place-form{
+    width: 100%;
+}
+#hr__form{
+    color: #3D848D !important;
+}
+#h2__form{
+    text-transform: none;
+}
+#form__profile-picture{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+#little-img__form{
+    width: 100%;
+}
+/* form on desktop */
+#form__elements--desktop{
+    background-color: white;
+    height: 640px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#bg-form-img--desktop{
+    background-image: url(../img/photographer2.jpg);
+    height: 640px;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#bg-form-img__filigram--desktop{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#form--desktop{
+    height: 580px;
+    width: 100%;
+}
+#place-form-elements--desktop{
+    width: 100%;
+}
+#message-desktop{
+    height: 200px;
+}
+label{
+    font-weight: bolder;
 }

@@ -145,39 +145,89 @@
 
 <!-- ! form -->
 <!-- bg blue container -->
-<section class="container" id="form">
-    <div class="row">
-        <div class="col">
+<section class="container-fluid" id="form">
+    <!-- display on mobile -->
+    <div class="row d-block d-md-none">
+        <div class="col pt-5">
             <!-- bg white container -->
-            <div class="container" id="form__elements">
+            <div class="container px-0" id="form__elements">
                 <div class="row">
                     <!-- left form -->
                     <div class="col-12 order-1">
-                        <form>
+                        <form class="px-5 pt-5">
                             <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="nom@exemple.com">
                             </div>
-                            <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <div class="mb-3 pb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Votre message..."></textarea>                            <!-- <input type="text" class="form-control" id="message" placeholder="Votre message..."> -->
                             </div>
-                            <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn__without-burger-menu">Envoyer</button>
                         </form>
                     </div>
                     <!-- right form -->
                     <div class="col-12 order-0">
                         <!-- bg img -->
-                        <div>bg img
-                            <h1>Contactez moi</h1>
-                            <hr>
-                            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                            <div>littleimg</div>
+                        <div id="bg-form-img">
+                            <div id="bg-form-img__filigram">
+                                <div id="form-elements" class="d-flex align-content-center justify-content-center flex-wrap"> 
+                                    <h1 class="m-0">Contactez moi</h1>
+                                    <div id="hr__place-form" class="d-flex justify-content-center pb-2">
+                                        <hr id="hr__form">
+                                    </div>
+                                    <h2 id="h2__form">Lorem ipsum dolor sit amet.</h2>
+                                    <div id="little-img__form" class="d-flex justify-content-center pt-2">
+                                        <img src="./public/assets/img/photographer.jpg" alt="photo de la photographe Ariette Deschamps" id="form__profile-picture" class="rounded-5">
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- display on desktop -->
+    <div class="row d-none d-md-block">
+        <div class="col pt-5">
+            <!-- bg white container -->
+            <div class="container mt-5 px-0" id="form__elements--desktop">
+                <div class="row">
+                    <!-- left form -->
+                    <div class="col-6 p-0">
+                        <div id="place-form--desktop">
+                            <form class="px-5 ms-2 pt-5 d-flex align-items-center" id="form--desktop">
+                                <div id="place-form-elements--desktop">
+                                    <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="nom@exemple.com">
+                                    </div>
+                                    <div class="mb-3 pb-3">
+                                    <label for="message-desktop" class="form-label pt-3">Message</label>
+                                    <textarea class="form-control" id="message-desktop" rows="3" placeholder="Votre message..."></textarea>                            <!-- <input type="text" class="form-control" id="message" placeholder="Votre message..."> -->
+                                    </div>
+                                    <button type="submit" class="btn btn__without-burger-menu mt-5">Envoyer</button>
+                                </div>
+                                </form>
+                        </div>
+                    </div>
+                    <!-- right form -->
+                    <div class="col-6">
+                        <!-- bg img -->
+                        <div id="bg-form-img--desktop">
+                            <div id="bg-form-img__filigram--desktop">
+                                <div id="form-elements" class="d-flex align-content-center justify-content-center flex-wrap"> 
+                                    <h1 class="m-0">Contactez moi</h1>
+                                    <div id="hr__place-form" class="d-flex justify-content-center pb-2">
+                                        <hr id="hr__form">
+                                    </div>
+                                    <h2 id="h2__form">Lorem ipsum dolor sit amet.</h2>
+                                    <div id="little-img__form" class="d-flex justify-content-center pt-2">
+                                        <img src="./public/assets/img/photographer.jpg" alt="photo de la photographe Ariette Deschamps" id="form__profile-picture" class="rounded-5">
+                                    </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
