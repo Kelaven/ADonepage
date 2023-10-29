@@ -1,4 +1,4 @@
-/* ! Paramètres généraux */
+/* !!!!!!!!!!!!!!!!!!! Paramètres généraux !!!!!!!!!!!!!!!!!! */
 
 *{
     font-family: 'Open Sans', sans-serif;
@@ -39,7 +39,7 @@ i{
 }
 
 
-/* ! header */
+/* !!!!!!!!!!!!!!!!!!! header !!!!!!!!!!!!!!!!!! */
 /* background image */
 header{
     background-image: url("../img/landscapes/landscape1.jpg");
@@ -78,8 +78,9 @@ header{
 }
 
 
-/* ! body */
-/** biography **/
+/* !!!!!!!!!!!!!!!!!! body !!!!!!!!!!!!!!!!!! */
+
+/* ! biography */
 
 #biography-picture{
     height: 500px;
@@ -101,7 +102,7 @@ header{
     color: black;
 }
 
-/** portraits **/
+/* ! portraits */
 #portraits{
     background-color: #3D848D;
 }
@@ -111,7 +112,7 @@ header{
 }
 .displaygrid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 300px 300px 300px 300px;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
@@ -170,7 +171,7 @@ header{
     grid-row-start: 4;
     grid-row-end: span 1;
 }
-.portraits-img-size{
+.portraitsnpaysages-img-size{
     height: 100% !important;
     width: 100% !important;
     object-fit: cover !important;
@@ -193,14 +194,90 @@ header{
     }
 }
 
-/** landscape **/
+/* ! landscape */
 
-#landscape{
-    /* background-color: lightsalmon; */
-
+#landscape h1{
+    color: #F6A844 !important;
+}
+#hr__paysages{
+    width: 80px;
+}
+.displaygrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+#img1{
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+#img2{
+    grid-column-start: 4;
+    grid-column-end: span 5;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+#img3{
+    grid-column-start: 9;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+#img4{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+#img5{
+    grid-column-start: 3;
+    grid-column-end: span 6;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+#img6{
+    grid-column-start: 3;
+    grid-column-end: span 5;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+#img7{
+    grid-column-start: 8;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+#img8{
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+#img9{
+    grid-column-start: 6;
+    grid-column-end: span 5;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+/* media querie to make the grid responsive */
+@media (max-width: 992px) {
+    .displaygrid{
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9 {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
 }
 
-/** form **/
+/* ! form */
 /* form on mobile */
 #form{
     background-color: #3D848D;
