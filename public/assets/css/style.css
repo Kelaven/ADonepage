@@ -315,6 +315,7 @@ header{
 }
 #hr__form{
     color: #3D848D !important;
+    width: 80px;
 }
 #h2__form{
     text-transform: none;
@@ -364,4 +365,41 @@ header{
 }
 label{
     font-weight: bolder;
+}
+
+
+/* !!!!!!!!!!!!!!!!!! footer !!!!!!!!!!!!!!!!!! */
+footer{
+    height: 35vh;
+}
+ul{
+    list-style: none;
+    position: relative;
+    top: 10vh;
+    font-weight: bolder;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.li-mobile{
+    width: 100%;
+}
+.footer-logos{
+    color: #F6A844;
+    position: relative;
+    top: 10vh;
+}
+.place-footer-logos__desktop{
+    width: 100%;
+}
+.place-footer-logos__mobile{
+    position: relative;
+    bottom: 11vh;
+}
+footer p{
+    color: #505056;
+    position: relative;
+    top: 15vh !important;
+    font-size: 11px;
 }
