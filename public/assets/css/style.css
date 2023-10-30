@@ -46,7 +46,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* navbar */
@@ -63,12 +63,13 @@ header{
     border: 2px solid white !important;
 }
 /* custom bg to display when clicking on the burger menu */
-.navbar-collapse--active{
+.navbar-collapse--active{ /* to get the class in JS */
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
-    height: 300px !important;
 }
-
+.navbar-collapse--active ul{
+    top: 0vh;
+}
 /* to align items in the middle */
 #container-size__header-elements{
     height: 80%;
@@ -372,13 +373,13 @@ label{
 footer{
     height: 35vh;
 }
-ul{
+footer ul{
     list-style: none;
     position: relative;
     top: 10vh;
     font-weight: bolder;
 }
-ul li a{
+footer ul li a{
     text-decoration: none;
     color: black;
 }
