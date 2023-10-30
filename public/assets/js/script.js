@@ -7,7 +7,7 @@ const backgroundColor = document.querySelector(".navbar-collapse");
 // ! functions
 // add my custom bg class :
 const displayBgOnBurgerMenu = () => {
-    backgroundColor.classList.toggle("navbar-collapse--active");     // .toggle is used to create a tilting mechanism
+    backgroundColor.classList.toggle("navbar-collapse--active"); // .toggle is used to create a tilting mechanism
 }
 
 // ! events

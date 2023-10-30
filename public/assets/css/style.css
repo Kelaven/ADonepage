@@ -3,10 +3,6 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
-/* modify the bg color of bootstrap's elements to transparent */
-.bg-custom{
-    background-color: rgba(0, 0, 0, 0) !important;
-}
 h1{
     color: white !important;
     text-transform: uppercase;
