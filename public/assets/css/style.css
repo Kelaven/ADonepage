@@ -66,6 +66,7 @@ header{
 .navbar-collapse--active{ /* to get the class in JS */
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    height: 300px !important;
 }
 .navbar-collapse--active ul{
     top: 0vh;
