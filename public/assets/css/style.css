@@ -66,6 +66,7 @@ header{
 .navbar-collapse--active{
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    height: 300px !important;
 }
 
 /* to align items in the middle */
@@ -281,7 +282,7 @@ header{
 /* form on mobile */
 #form{
     background-color: #3D848D;
-    height: 100vh;
+    min-height: 100vh;
 }
 #form__elements{
     background-color: white;
@@ -332,7 +333,7 @@ header{
 /* form on desktop */
 #form__elements--desktop{
     background-color: white;
-    height: 640px;
+    /* height: 640px; */
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -343,7 +344,6 @@ header{
     height: 640px;
     background-position: center;
     background-size: cover;
-    background-color: black;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
 }
